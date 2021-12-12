@@ -109,6 +109,11 @@ export default {
 
 
 <style>
+#container{
+  background-image:  url(https://wallpaperaccess.com/full/2757708.jpg);
+  
+  background-size: 100% 100%;
+}
 #Historial {
   width: 100%;
 

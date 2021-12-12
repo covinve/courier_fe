@@ -6,7 +6,7 @@
         <button v-if="is_auth" v-on:click="loadHome">Inicio</button>
         <button v-if="is_auth" v-on:click="createGuide">Crear Guía</button>
         <button v-if="is_auth" v-on:click="updateGuide">Actualizar Guía</button>
-        <button v-if="is_auth" v-on:click="loadGuide">Consultar Guía</button>
+        <button v-if="is_auth" v-on:click="guideStates">Consultar Guía</button>
         <button v-if="is_auth" v-on:click="logOut">Cerrar Sesión</button>
         <button v-if="!is_auth" v-on:click="loadLogIn">Iniciar Sesión</button>
         <button v-if="!is_auth" v-on:click="loadSignUp">Registrarse</button>
@@ -27,8 +27,6 @@
     </div>
   </div>
 </template>
-
-
 
 
 <script>
@@ -63,6 +61,10 @@ export default {
       this.$router.push({ name: "updateGuide" });
     },
 
+    guideStates: function () {
+      this.$router.push({ name: "guideStates" });
+    },
+
     loadSignUp: function () {
       this.$router.push({ name: "signUp" });
     },
@@ -86,14 +88,6 @@ export default {
     },
     loadHome: function () {
       this.$router.push({ name: "home" });
-    },
-
-    createGuide: function () {
-      this.$router.push({ name: "createGuide" });
-    },
-
-    updateGuide: function () {
-      this.$router.push({ name: "updateGuide" });
     },
 
     logOut: function () {

@@ -60,7 +60,7 @@ export default {
           alert("Actualización correcta");
         })
         .catch((error) => {
-          alert("ERROR: Fallo la creacion de la guía." + error);
+          alert("ERROR: Fallo la actualización de la guía: " + error);
         });
     },
   },

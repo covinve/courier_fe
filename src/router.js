@@ -4,7 +4,7 @@ import App from "./App.vue";
 import LogIn from "./components/LogIn.vue";
 import SignUp from "./components/SignUp.vue";
 import Home from "./components/Home.vue";
-import Account from "./components/Account.vue";
+import GuideStates from "./components/GuideStates.vue";
 import CreateGuide from "./components/CreateGuide.vue";
 import UpdateGuide from "./components/UpdateGuide.vue";
 
@@ -30,9 +30,9 @@ const routes = [
     component: Home,
   },
   {
-    path: "/user/account",
-    name: "account",
-    component: Account,
+    path: "/user/guideStates",
+    name: "guideStates",
+    component: GuideStates,
   },
   {
     path: "/user/createGuide",

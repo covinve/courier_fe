@@ -97,7 +97,8 @@ export default {
   padding: 0%;
   height: 100%;
   width: 100%;
-
+  background-image: url(https://wallpaperaccess.com/full/2757708.jpg);
+  background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,6 +109,7 @@ export default {
   border-radius: 10px;
   width: 25%;
   height: 60%;
+  background-color: #ffffff;
 
   display: flex;
   flex-direction: column;

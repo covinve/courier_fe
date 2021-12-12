@@ -1,7 +1,12 @@
 <template>
   <div id="app" class="app">
     <div class="header">
+       <div class="header_logo">
+        <img src="https://i.ibb.co/ySypWx2/image.png" />
+      </div>
+      <!--
       <h1>Servicio de mensajería</h1>
+      -->
       <nav>
         <button v-if="is_auth" v-on:click="loadHome">Inicio</button>
         <button v-if="is_auth" v-on:click="createGuide">Crear Guía</button>
@@ -110,13 +115,10 @@ export default {
 </script>
 
 
-
-
-
-
 <style>
 body {
   margin: 0 0 0 0;
+
 }
 
 .header {
@@ -127,6 +129,7 @@ body {
   min-height: 100px;
 
   background-color: #283747;
+  
   color: #e5e7e9;
 
   display: flex;
@@ -134,9 +137,17 @@ body {
   align-items: center;
 }
 
+.header img {
+     max-height:10%;
+     min-height:0%;
+     max-width:38%;/*valor inicial*/
+     display: flex;
+}
+
 .header h1 {
   width: 30%;
-  text-align: center;
+  text-align: left;
+  font-family: Verdana, Arial, Tahoma, Serif;
 }
 
 .header nav {

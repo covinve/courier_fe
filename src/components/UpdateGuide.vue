@@ -60,7 +60,7 @@ export default {
           alert("Actualización correcta");
         })
         .catch((error) => {
-          alert("ERROR: Fallo la creacion de la guía." + error);
+          alert("ERROR: Fallo la actualización de la guía: " + error);
         });
     },
   },
@@ -74,8 +74,6 @@ export default {
   padding: 0%;
   height: 100%;
   width: 100%;
-  background-image: url(https://wallpaperaccess.com/full/2757708.jpg);
-  background-size: 100% 100%;
 
   display: flex;
   justify-content: center;
@@ -87,7 +85,6 @@ export default {
   border-radius: 10px;
   width: 25%;
   height: 60%;
-  background-color: #ffff;
 
   display: flex;
   flex-direction: column;

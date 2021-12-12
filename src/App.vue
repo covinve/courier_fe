@@ -1,17 +1,12 @@
 <template>
   <div id="app" class="app">
     <div class="header">
-       <div class="header_logo">
-        <img src="https://i.ibb.co/ySypWx2/image.png" />
-      </div>
-      <!--
       <h1>Servicio de mensajería</h1>
-      -->
       <nav>
         <button v-if="is_auth" v-on:click="loadHome">Inicio</button>
         <button v-if="is_auth" v-on:click="createGuide">Crear Guía</button>
         <button v-if="is_auth" v-on:click="updateGuide">Actualizar Guía</button>
-        <button v-if="is_auth" v-on:click="loadGuide">Consultar Guía</button>
+        <button v-if="is_auth" v-on:click="guideStates">Consultar Guía</button>
         <button v-if="is_auth" v-on:click="logOut">Cerrar Sesión</button>
         <button v-if="!is_auth" v-on:click="loadLogIn">Iniciar Sesión</button>
         <button v-if="!is_auth" v-on:click="loadSignUp">Registrarse</button>
@@ -32,8 +27,6 @@
     </div>
   </div>
 </template>
-
-
 
 
 <script>
@@ -68,6 +61,10 @@ export default {
       this.$router.push({ name: "updateGuide" });
     },
 
+    guideStates: function () {
+      this.$router.push({ name: "guideStates" });
+    },
+
     loadSignUp: function () {
       this.$router.push({ name: "signUp" });
     },
@@ -93,14 +90,6 @@ export default {
       this.$router.push({ name: "home" });
     },
 
-    createGuide: function () {
-      this.$router.push({ name: "createGuide" });
-    },
-
-    updateGuide: function () {
-      this.$router.push({ name: "updateGuide" });
-    },
-
     logOut: function () {
       localStorage.clear();
       alert("Sesión Cerrada");
@@ -115,10 +104,13 @@ export default {
 </script>
 
 
+
+
+
+
 <style>
 body {
   margin: 0 0 0 0;
-
 }
 
 .header {
@@ -129,7 +121,6 @@ body {
   min-height: 100px;
 
   background-color: #283747;
-  
   color: #e5e7e9;
 
   display: flex;
@@ -137,17 +128,9 @@ body {
   align-items: center;
 }
 
-.header img {
-     max-height:10%;
-     min-height:0%;
-     max-width:38%;/*valor inicial*/
-     display: flex;
-}
-
 .header h1 {
   width: 30%;
-  text-align: left;
-  font-family: Verdana, Arial, Tahoma, Serif;
+  text-align: center;
 }
 
 .header nav {

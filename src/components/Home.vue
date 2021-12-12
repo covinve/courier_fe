@@ -69,6 +69,9 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image:  url(https://wallpaperaccess.com/full/2757708.jpg);
+  
+  background-size: 100% 100%
 }
 .information h1 {
   font-size: 60px;
@@ -96,5 +99,6 @@ export default {
   border-radius: 20px;
   padding: 30px 80px;
   margin: 30px 0 0 0;
+  background-color: #f2f2f2;
 }
 </style>

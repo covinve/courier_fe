@@ -1,4 +1,5 @@
 <template>
+
   <div id="GuideStates">
     <div class="container">
       <h2>Consultar Estados de la Guía</h2>
@@ -70,6 +71,9 @@ export default {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  background-image:  url(https://wallpaperaccess.com/full/2757708.jpg);
+  
+  background-size: 100% 150%;
 }
 
 .container input {
@@ -83,9 +87,10 @@ export default {
   border: 1px solid #283747;
 }
 
+
 #GuideStates .container-table {
   width: 50%;
-
+  
   max-height: 200px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -95,6 +100,7 @@ export default {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
 }
 
 #GuideStates table td,
@@ -120,14 +126,14 @@ export default {
 }
 
 #GuideStates > h2 {
-  color: #283747;
+  color: #ffffff;
   font-size: 25px;
 }
 
 #GuideStates .container {
   padding: 30px;
   border: 3px solid #283747;
-
+  background-color: #ffff;
   border-radius: 20px;
   margin: 5% 0 1% 0;
 }

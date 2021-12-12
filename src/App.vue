@@ -1,7 +1,12 @@
 <template>
   <div id="app" class="app">
     <div class="header">
+       <div class="header_logo">
+        <img src="https://i.ibb.co/ySypWx2/image.png" />
+      </div>
+       <!--
       <h1>Servicio de mensajería</h1>
+      -->
       <nav>
         <button v-if="is_auth" v-on:click="loadHome">Inicio</button>
         <button v-if="is_auth" v-on:click="createGuide">Crear Guía</button>
@@ -105,9 +110,6 @@ export default {
 
 
 
-
-
-
 <style>
 body {
   margin: 0 0 0 0;
@@ -127,7 +129,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.header img {
+     max-height:10%;
+     min-height:0%;
+     max-width:38%;/*valor inicial*/
+     display: flex;
+}
 .header h1 {
   width: 30%;
   text-align: center;

@@ -149,6 +149,11 @@ export default {
 
 
 <style>
+.createGuide_u{
+  background-image:  url(https://wallpaperaccess.com/full/2757708.jpg);
+  
+  background-size: 100% 100%;
+}
 .createGuide_u {
   margin: 0;
   padding: 0%;
@@ -165,6 +170,7 @@ export default {
   border-radius: 10px;
   width: 25%;
   height: 90%;
+  background-color: #f2f2f2;
 
   display: flex;
   flex-direction: column;
